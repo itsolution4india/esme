@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+
+# Virtual environment
+env/
+venv/
+myenv/
+ENV/
+.venv/
+.myenv/
+.env/
+
+# Django-specific
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+
+# Migrations (optional – if you want to keep them, remove this line)
+**/migrations/*.py
+**/migrations/*.pyc
+!**/migrations/__init__.py
+
+# MySQL or Postgres local database dumps
+*.sql
+*.sqlite3
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache
+coverage.xml
+
+# Pytest
+.pytest_cache/
+
+# Build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node (if using frontend tools like React or Webpack)
+node_modules/
+npm-debug.log
+yarn-error.log

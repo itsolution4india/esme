@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send SMS</title>
+</head>
+<body>
+    <h2>Send SMS</h2>
+    {% if success %}
+        <p style="color: green;">Message sent successfully! Response: {{ success }}</p>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send SMS</button>
+    </form>
+</body>
+</html>

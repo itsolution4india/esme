@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMPP Connection</title>
+</head>
+<body>
+    <h2>Enter SMPP Credentials</h2>
+    
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Connect</button>
+    </form>
+
+    {% if connection_success %}
+        <p style="color: green;">✅ Connection Successful!</p>
+        <a href="{% url 'send_sms' %}">
+            <button>Go to Send SMS</button>
+        </a>
+    {% endif %}
+</body>
+</html>
